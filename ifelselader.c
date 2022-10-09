@@ -6,7 +6,7 @@ void main()
     int number,first,second;
 
     printf("enter value of number ");
-    scanf("%d",&number);
+    scanf("%d",&number );
     // number=56;
     first=number/10;
     second=number%10;
