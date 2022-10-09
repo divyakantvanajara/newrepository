@@ -5,7 +5,7 @@ void main()
     int length1,length2,width1,width2,office1,office2;
 
     printf("enter the value of length1");
-    scanf("%d",&length1);
+    scanf("%d",&length1 );
 
      printf("enter the value of width1");
     scanf("%d",&width1);
