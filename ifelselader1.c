@@ -27,7 +27,7 @@ void main()
     }
      else if(letter=='u' || letter=='U')
     {
-        printf("it is vowel");
+        printf("it is vowe");
     }
     else
     {
