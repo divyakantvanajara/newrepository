@@ -9,7 +9,7 @@ void main()
     scanf("%d",&number );
     // number=56;
     first=number/10;
-    second=number%10;
+    second=number%9;
 
     printf("the value of number is first %d and second is %d \n\n",first,second);
 
