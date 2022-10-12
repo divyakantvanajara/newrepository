@@ -28,8 +28,8 @@ void main()
         price = unit * 1 ;
         energycharg = price*0.5;
         totalamount = price + energycharg;
-        printf("the value of price :%f\n",price);
-        printf("the value of energycharg:%f\n",energycharg);
+        // printf("the value of price :%f\n",price);
+        // printf("the value of energycharg:%f\n",energycharg);
         printf("the value of totalamount: %f\n",totalamount);
     }
     else if (unit >100 && unit < 200)
@@ -37,8 +37,8 @@ void main()
         price = unit * 2;
         energycharg = price*0.5;
         totalamount = price + energycharg;
-        printf("the value of price :%f\n",price);
-        printf("the value of energycharg:%f\n",energycharg);
+        // printf("the value of price :%f\n",price);
+        // printf("the value of energycharg:%f\n",energycharg);
         printf("the value of totalamount: %f\n",totalamount);
     }
      else if (unit >200 && unit < 300)
@@ -46,8 +46,8 @@ void main()
         price = unit * 3;
         energycharg = price*0.5;
         totalamount = price + energycharg;
-        printf("the value of price :%f\n",price);
-        printf("the value of energycharg:%f\n",energycharg);
+        // printf("the value of price :%f\n",price);
+        // printf("the value of energycharg:%f\n",energycharg);
         printf("the value of totalamount: %f\n",totalamount);
     }
     else if (unit >300 && unit < 400)
@@ -55,8 +55,8 @@ void main()
         price = unit * 4;
         energycharg = price*0.5;
         totalamount = price + energycharg;
-        printf("the value of price :%f\n",price);
-        printf("the value of energycharg:%f\n",energycharg);
+        // printf("the value of price :%f\n",price);
+        // printf("the value of energycharg:%f\n",energycharg);
         printf("the value of totalamount: %f\n",totalamount);
     }
     else if (unit > 400 )
@@ -64,8 +64,8 @@ void main()
         price = unit * 5;
         energycharg = price*0.5;
         totalamount = price + energycharg;
-        printf("the value of price :%f\n",price);
-        printf("the value of energycharg:%f\n",energycharg);
+        // printf("the value of price :%f\n",price);
+        // printf("the value of energycharg:%f\n",energycharg);
         printf("the value of totalamount: %f\n",totalamount);
     }
     else
