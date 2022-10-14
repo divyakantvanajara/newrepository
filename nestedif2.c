@@ -1,0 +1,1 @@
+// write a program to findout distance between 2 planets
