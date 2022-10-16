@@ -8,66 +8,87 @@
 // 6-> minimum
 // 7-> maximum
 // 8-> equality
-#include<stdio.h>
-
+// Write a programe to make calc
+#include <stdio.h>
 void main()
 {
-int num1, num2, cal,ope; //decleration of integer variables
-//char ope; //decleration of character variables
-
-printf("Enter First Number : ");
-scanf("%d", &num1); //Getting the first value from user
-
-printf("Enter Second Number : ");
-scanf("%d", &num2); //Getting the second value from user
-
-printf("Enter 1 for plus \n Enter 2 for minus \n enter 3 for multiply \n enter 4 for divide \n enter 5 modulas \n enter 6 minimum \n enter 7 maximum \n enter equality");
-    printf("\nselect one option");
-    scanf("%d",&ope);
-
-//printf("Choose Any Operator: +  | - | / | * \n");
-//scanf(" %d", &ope); // getting the operator for operation from user
-
- // Applying if-else condition to check conditions 
- if(ope == 1)
- {
-  cal= num1 + num2;
-  printf("Addition of two numbers is: %i",cal);
- }
-
- else if(ope == 2)
- {
-  cal= num1 - num2;
-  printf("Subtraction of two numbers is: %i",cal);
- }
-  
- else if(ope == 3)
- {
-  cal= num1 * num2;
-  printf(" Multiplication of two numbers is: %i",cal);
- }
-  
- else if(ope == 4 )
- {
-  cal= num1 / num2;
-  printf(" Divisionof two numbers is: %i",cal);
- }
-  
- else if(ope == 5 )
- {
-  cal= num1 % num2;
-  printf("Modulas of two numbers is: %i",cal);
- }
- //else if(ope == 6)
- //{
- // cal= num1 % num2;
- // printf("Modulas of two numbers is: %i",cal);
- //}
-
-  
- else
- {
- printf("Invalid Input"); 
- }
-
+    int num1, num2, option;
+    float answer;
+    printf("Enter value of number 1 ");
+    scanf("%d", &num1);
+    printf("Enter value of number 2 ");
+    scanf("%d", &num2);
+    printf("Select any one option ");
+    printf("\nEnter 1 for addition ");
+    printf("\nEnter 2 for subtraction ");
+    printf("\nEnter 3 for division ");
+    printf("\nEnter 4 for multiplication ");
+    printf("\nEnter 5 for modlus ");
+    printf("\nEnter 6 for minimum ");
+    printf("\nEnter 7 for maximum ");
+    printf("\nEnter 8 for equality ");
+    scanf("%d", &option);
+    if (option == 1)
+    {
+        answer = num1 + num2;
+        printf("The value of answer is %f", answer);
+    }
+    else if (option == 2)
+    {
+        answer = num1 - num2;
+        printf("The value of answer is %f", answer);
+    }
+    else if (option == 3)
+    {
+        answer = num1 / num2;
+        printf("The value of answer is %f", answer);
+    }
+    else if (option == 4)
+    {
+        answer = num1 * num2;
+        printf("The value of answer is %f", answer);
+    }
+    else if (option == 5)
+    {
+        answer = num1 % num2;
+        printf("The value of answer is %f", answer);
+    }
+    else if (option == 6)
+    {
+        if (num1 < num2)
+        {
+            printf("Num1 is lowest ");
+        }
+        else if (num2 < num1)
+        {
+            printf("Num2 is lowest ");
+        }
+    }
+    else if (option == 7)
+    {
+        if (num1 > num2)
+        {
+            printf("num1 is greater ");
+        }
+        else if (num2 > num1)
+        {
+            printf("num2 is greater ");
+        }
+    }
+    else if (option == 8)
+    {
+        if (num1 == num2)
+        {
+            printf("Both are same ");
+        }
+        else 
+        {
+            printf("Both are not same ");
+        }
+    }
+    else
+    {
+        printf("Invalid choice of option ");
+    }
+    printf("\nGoodbyee..");
 }
