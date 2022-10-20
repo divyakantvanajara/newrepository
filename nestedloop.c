@@ -15,7 +15,7 @@ void main()
         }
         printf("\n");
         count = 0;
-        flash++;
+        //flash++;
     }
     // while (count < 2)
     // {

@@ -1,21 +1,32 @@
 // write a program to findout power of given number using given exponent 
-#include<math.h>
+
 #include<stdio.h>
 
 void main()
 {
-    int base,exponent;
-    int result;
+    int base,exponent,power,count;
+    
 
     printf("Enter the value of base: ");
-    scanf("%d",&base);
+    scanf("%d", &base);
 
     printf("enter the value of exponent : ");
-    scanf("%d ",&exponent);
+    scanf("%d ", &exponent);
 
-    result = pow(base , exponent);
-    
-    printf("%d^%d = %d  " ,base,exponent,result);
-    
+    power = base * base ;
+
+    for(count=3;count<=exponent;count++)
+    {
+        power = power * base ;
+    }
+        printf(" the value of power is : %d",power);
     
 }
+   // power = power * base ;
+    //power = power * base ;
+    //power = power * base ;
+    // base=5;
+    // exponent=7;
+    // 5*5*5*5*5*5*5
+
+
