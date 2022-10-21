@@ -7,11 +7,11 @@ void main()
 {
     int count=0,flash=5;
     
-   while(flash > 0)
+   while(flash >= 0)
    {
         while(count < flash)
         {
-            printf("*");
+            printf("* ");
             count = count+ 1;
         }
         printf("\n");
