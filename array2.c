@@ -2,7 +2,7 @@
 #include<stdio.h>
 void main ()
 {
-    int runs[5],count=0,temp;
+    int runs[5],count=0,temp,flash;
     do
     {
         printf("Enter value of runs %d : ",count+1);
@@ -34,35 +34,36 @@ void main ()
     // printf("\n the value of runs 4 is %d",runs[3]);
     
     // printf("\n the value of runs 5 is %d",runs[4]);
-   
-    
-    if(runs[1]>runs[0])
+   for(flash=0;flash<5;flash++)
     {
-        temp=runs[0];
-        runs[0]=runs[1];
-        runs[1]=temp;        
+        if(runs[flash]>runs[0])
+        {
+         temp=runs[0];
+         runs[0]=runs[flash];
+            runs[flash]=temp;        
+        }
     }
+    //this is for bubble sorting
+    // if(runs[2]>runs[0])
+    // {
+    //     temp=runs[0];
+    //     runs[0]=runs[2];
+    //     runs[2]=temp;        
+    // }
 
-    if(runs[2]>runs[0])
-    {
-        temp=runs[0];
-        runs[0]=runs[2];
-        runs[2]=temp;        
-    }
+    // if(runs[3]>runs[0])
+    // {
+    //     temp=runs[0];
+    //     runs[0]=runs[3];
+    //     runs[3]=temp;        
+    // }
 
-    if(runs[3]>runs[0])
-    {
-        temp=runs[0];
-        runs[0]=runs[3];
-        runs[3]=temp;        
-    }
-
-    if(runs[4]>runs[0])
-    {
-        temp=runs[0];
-        runs[0]=runs[4];
-        runs[4]=temp;        
-    }
+    // if(runs[4]>runs[0])
+    // {
+    //     temp=runs[0];
+    //     runs[0]=runs[4];
+    //     runs[4]=temp;        
+    // }
     
     printf("\n highest runs is : %d",runs[0]);
 }

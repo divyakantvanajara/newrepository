@@ -3,7 +3,7 @@
 #include<stdio.h>
 void main()
 {
-    int goals[5],count,temp;
+    int goals[5],count,temp,flash;
 
     
     for (count = 0; count < 5; count++)
@@ -15,31 +15,34 @@ void main()
     {
         printf("\nthe value of goals  %d are %d ",count+1,goals[count]);
     }
-
-    if(goals[1]<goals[0])
+    for(flash=0;flash<5;flash++)
+    {
+    if(goals[flash]<goals[0])
     {
         temp=goals[0];
-        goals[0]=goals[1];
-        goals[1]=temp;
+        goals[0]=goals[flash];
+        goals[flash]=temp;
     }
-     if(goals[2]<goals[0])
-    {
-        temp=goals[0];
-        goals[0]=goals[2];
-        goals[2]=temp;
     }
-     if(goals[3]<goals[0])
-    {
-        temp=goals[0];
-        goals[0]=goals[3];
-        goals[3]=temp;
-    }
-     if(goals[4]<goals[0])
-    {
-        temp=goals[0];
-        goals[0]=goals[4];
-        goals[4]=temp;
-    }
+    //this is for bubble sorting
+    //  if(goals[2]<goals[0])
+    // {
+    //     temp=goals[0];
+    //     goals[0]=goals[2];
+    //     goals[2]=temp;
+    // }
+    //  if(goals[3]<goals[0])
+    // {
+    //     temp=goals[0];
+    //     goals[0]=goals[3];
+    //     goals[3]=temp;
+    // }
+    //  if(goals[4]<goals[0])
+    // {
+    //     temp=goals[0];
+    //     goals[0]=goals[4];
+    //     goals[4]=temp;
+    // }
      printf("\n lowest goals is : %d",goals[0]);
 
 
