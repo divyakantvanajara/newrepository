@@ -1,4 +1,5 @@
 //Example of multiarray
+// write a programe to store  5 student of 5 subject's
 #include<stdio.h>
 #include<stdio.h>
 void main()

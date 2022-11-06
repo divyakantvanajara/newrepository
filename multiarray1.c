@@ -1,4 +1,5 @@
 // example of multi array
+//write a programe to store 5 matches runs of 5 player's
 #include<stdio.h>
 void main()
 {
