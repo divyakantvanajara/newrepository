@@ -4,7 +4,7 @@
 #include<stdio.h>
 void main()
 {
-    int student[5][5],count,temp,total[5];
+    int student[5][5],count,temp,sum[5],total;
     float average;
     for(temp=0;temp<5;temp++)
     {
@@ -28,23 +28,32 @@ void main()
     }
     printf("\n");
     }
+
     for(temp=0;temp<5;temp++)
     {
-
-    
-    total[temp]=0;
+        sum[temp]=0;
     for(count=0;count<5;count++)
     {
-    total[temp]= total[temp] + student[temp][count];
-    }
-    
-    printf("\nall student total : %d ",total[temp]);
-    
+    sum[temp]= sum[temp] + student[temp][count];
+
     
     }
+    printf("\nthe value of total of all student is %d ",sum[temp]);
+   // printf("\nall student %d and total subject:%d =%d",temp+1,count+1,sum[temp]);
     
-    average = total[temp]/5;
-    printf("the average is %d ",average);
+    }
+   // total=sum[0];
+    for(count=0;count<5;count++)
+    {
+        total= total+sum[count];
+    }
+    //  total= total + sum[count];
+    //   total=total +sum[3];
+    //    total=total +sum[4];  
+    printf("\nall student total : %d ",total);
+    
+    average = total/5;
+    printf("\nthe average is %f ",average);
     // total[0]= total[0] + student[0][1];
     // total[0]= total[0] + student[0][2];
     // total[0]= total[0] + student[0][3];
