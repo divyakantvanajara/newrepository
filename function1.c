@@ -3,7 +3,7 @@
 #include<stdio.h>
 void printline()
 {
-    printf("\n----------------------------------\n");
+    printf("\n----------------------------------\nf");
 }
 
 void main()
